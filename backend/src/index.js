@@ -1,4 +1,18 @@
-const express = require ('express');
+
+const express = require("express");
+const cors = require("cors");
+const routes = require("./routes");
+
+const app = express();
+
+app.use(cors());
+
+app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
+
+/*const express = require ('express');
 const cors = require('cors');
 const routes = require ('./routes'); // usando o "./" pq é um caminho, ou seja, a mesma pasta do arquivo index
 const app = express();
@@ -7,7 +21,8 @@ app.use(express.json());
 app.use(routes);
 app.use(cors());
 
-app.listen(3333);
+app.listen(3333);*/
+
 /*
 ROTA
 RECURSO (geralmente associado a alguma tabela do banco de dados
@@ -42,7 +57,3 @@ Driver: SELECT * FROM users
 Query Builder: table('users').select('*').where()
 
 */
-
-
-
-app.listen(3333);
