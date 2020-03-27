@@ -45,7 +45,5 @@ request body: corpo da requisição, utilizado para criar ou alterar recursos (u
 
 /*
 Driver: SELECT * FROM users
-
 Query Builder: table('users').select('*').where()
-
 */
