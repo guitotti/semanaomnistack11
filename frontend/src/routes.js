@@ -6,8 +6,7 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import NewIncident from './pages/NewIncident';
 
-//browserrouter sempre por fora de tudo
-//switch vai garantir que uma rota seja acessada por vez, pra não chamar mais de uma rota
+
 export default function Routes(){
     return(
 

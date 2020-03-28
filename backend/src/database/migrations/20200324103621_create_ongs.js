@@ -9,7 +9,7 @@ exports.up = function(knex) {
       table.string('uf', 2).notNullable();
   });
 };
-//se der algum problema o que fazer para voltar atrás? usar o método down
+
 exports.down = function(knex) {
   return knex.schema.dropTable('ongs');
 };

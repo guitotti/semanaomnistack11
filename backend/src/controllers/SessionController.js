@@ -9,7 +9,7 @@ module.exports = {
         const ong = await connection('ongs')
             .where('id', id)
             .select('name')
-            .first(); // retornar um único resultado, e não um array
+            .first(); 
 
         if(!ong){
             return response.status(400).json({error: 'No ONG found with this ID'});
