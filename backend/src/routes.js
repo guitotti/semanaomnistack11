@@ -6,8 +6,7 @@ const IncidentController = require('./controllers/IncidentController');
 const ProfileController = require('./controllers/ProfileController');
 const SessionController = require('./controllers/SessionController');
 
-const routes = express.Router(); // desacoplando o módulo de rotas do express em uma nova variável
-//listar todas as ongs do banco de dados
+const routes = express.Router(); 
 
 routes.post('/sessions', SessionController.create); //validar rota de sessions, se o id está sendo enviado
 
